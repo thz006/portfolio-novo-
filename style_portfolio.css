@@ -161,6 +161,10 @@ video {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-1 img{
+  transform: translateX(5%);
+}
+
 .skill-1:hover {
   transform: scale(1.2); /* Aumenta o tamanho em 20% */
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
@@ -262,7 +266,7 @@ video {
 }
 
 .projects-content{
-  height: 500px;
+  height: 250px;
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -277,17 +281,23 @@ video {
 .projects-content .img1{
   width: 12vw;
   height: 7vh;
-  margin-left: 30%;
+  transform: translateX(40%);
 }
 
-.projects-content .img2{
-  width: 40vw;
-  height: 55vh;
+.projects-content p{
+  color: white;
+  width: 60%;
+  transform: translateX(-20%);
 }
 
-.tweeb-countainer{
-  background-color: blue;
-  width: 100%;
-  height: 20%;
+.linha{
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(0vw);
+  display: flex;
 }
 
+.botão{
+  
+}
