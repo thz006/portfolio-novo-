@@ -5,15 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background: rgb(13,30,12);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .glass-header {
   position: fixed;
   top: 0;
@@ -27,6 +18,16 @@ body {
   justify-content: center;
   align-items: center;
   /* animation: slide-down 0.8s ease-out forwards; */
+}
+
+body {
+  display: block; /* Remove o comportamento de layout flex */
+  width: 100%;
+  height: auto; /* Permite que a altura cresça conforme o conteúdo */
+}
+
+section {
+  margin-top: 5rem; /* Adiciona espaçamento entre as seções */
 }
 
 .nav-links {
@@ -104,23 +105,189 @@ video {
   animation: fade-in 1.2s ease-out forwards;
 }
 
-#about{
+#about {
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0; /* Invisível inicialmente */
   animation: slide-right 0.8s ease-out forwards;
-  width: 90%;
+  width: 100%; /* Use toda a largura */
+  padding: 2rem; /* Adiciona espaçamento interno */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top:10% ;
 }
 
 .about-content{
   line-height: 30px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 60%;
 }
 
 .about-content h2{
   margin-bottom: 4%;
 }
+
+.skills-title{
+  color: white;
+}
+
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Use toda a largura */
+  padding: 2rem; /* Adiciona espaçamento interno */
+}
+
+.skills-content{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(45%);
+}
+
+.skill-1{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-1:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+
+.skill-2{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-2:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+
+.skill-2 img{
+  z-index: -1;
+}
+
+.skill-3{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-3:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+
+.skill-3 img{
+  z-index: -1;
+}
+
+.skill-4{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-4:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+.skill-5{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-5:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+
+.skill-6{
+  display: flex;
+  width: 12vw;
+  height: 12vh;
+  border: 3px solid white;
+  /* background-color: antiquewhite; */
+  border-radius:15%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-6:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Adiciona um efeito de sombra */
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Use toda a largura */
+  padding: 2rem; /* Adiciona espaçamento interno */
+}
+
+.projects-title{
+  color: white;
+}
+
+.projects-content{
+  height: 500px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(45%);
+  border: 2px solid white;
+  border-radius: 2%;
+}
+
+.projects-content .img1{
+  width: 12vw;
+  height: 7vh;
+  margin-left: 30%;
+}
+
+.projects-content .img2{
+  width: 40vw;
+  height: 55vh;
+}
+
+.tweeb-countainer{
+  background-color: blue;
+  width: 100%;
+  height: 20%;
+}
+
