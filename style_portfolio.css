@@ -27,7 +27,7 @@ body {
 }
 
 section {
-  margin-top: 5rem; /* Adiciona espaçamento entre as seções */
+  margin-top: 12rem; /* Adiciona espaçamento entre as seções */
 }
 
 .nav-links {
@@ -88,6 +88,8 @@ video {
   }
 }
 
+
+
 .li_1{
   animation: fade-in 0.4s ease-out forwards;
 }
@@ -128,8 +130,14 @@ video {
   margin-bottom: 4%;
 }
 
+.about-content p{
+  font-size: 2.5vh;
+  margin-top: 7%;
+}
+
 .skills-title{
   color: white;
+  margin-bottom: 5%;
 }
 
 #skills {
@@ -139,6 +147,8 @@ video {
   flex-direction: column;
   width: 100%; /* Use toda a largura */
   padding: 2rem; /* Adiciona espaçamento interno */
+  opacity: 0; /* Invisível inicialmente */
+  animation: fade-in 3s ease-out forwards;
 }
 
 .skills-content{
@@ -263,10 +273,13 @@ video {
 
 .projects-title{
   color: white;
+  opacity: 0; /* Invisível inicialmente */
+  animation: slide-right 0.8s ease-out forwards;
+  margin-bottom: 5%;
 }
 
 .projects-content{
-  height: 250px;
+  height: 150px;
   width: 70%;
   display: flex;
   flex-direction: row;
@@ -276,6 +289,8 @@ video {
   transform: translateY(45%);
   border: 2px solid white;
   border-radius: 2%;
+  opacity: 0; /* Invisível inicialmente */
+  animation: slide-right 0.8s ease-out forwards;
 }
 
 .projects-content .img1{
@@ -286,7 +301,6 @@ video {
 
 .projects-content p{
   color: white;
-  width: 60%;
   transform: translateX(-20%);
 }
 
@@ -298,6 +312,122 @@ video {
   display: flex;
 }
 
-.botão{
-  
+#education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Use toda a largura */
+  padding: 2rem; /* Adiciona espaçamento interno */
+}
+
+.education-title{
+  color: white;
+  opacity: 0; /* Invisível inicialmente */
+  animation: slide-right 0.8s ease-out forwards;
+  margin-bottom: 5%;
+}
+
+.education-content{
+  display: flex;
+  flex-direction: row;
+
+  gap: 10%;
+}
+
+.Voucher{
+  width: 20vw;
+  height: 30vh;
+  border: 2px solid white;
+  border-radius: 2%;
+}
+
+.Cisco-1{
+  width: 20vw;
+  height: 30vh;
+  border: 2px solid white;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-title{
+  color: white;
+  transform: translateY(-90%);
+}
+
+.celo{
+  height: 50%;
+  width: 46%;
+  transition: transform 0.3s ease;
+}
+
+.celo:hover{
+  transform: scale(1.2);
+}
+
+.botão-js{
+  width: 30%;
+  height: 10%;
+  background-color: #ffffff;
+  border-radius: 5%;
+  transform: translatey(130%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(70%);
+  transition: transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botão-js a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.botão-js a:hover{
+  color: white;
+}
+
+.botão-js:hover{
+  background-color: rgb(65, 164, 79);
+  color: #ffffff;
+}
+
+.voucher-title{
+  color: white;
+  transform: translateY(-100%);
+}
+
+.Voucher{
+  width: 20vw;
+  height: 30vh;
+  border: 2px solid white;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Voucher img{
+  height: 20%;
+  margin-bottom: 40%;
+  /* margin-right: 60%; */
+}
+
+.voucher-text{
+  color: white;
+  font-size: 90%;
+  transform: translateY(-260%);
+  width: 200px;
+}
+
+.period{
+  color: white;
 }
